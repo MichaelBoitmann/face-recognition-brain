@@ -1,4 +1,13 @@
 .Tilt {
+    height: 250px;
+    width: 250px;
     background: rgb(63,251,140);
     background: linear-gradient(254deg, rgba(63,251,140,1) 21%, rgba(252,144,70,1) 80%);
+}
+
+img {
+    flex: auto;
+    height: 150px;
+    width: 150px;
+    text-align: center;
 }
