@@ -8,7 +8,6 @@
 }
 
 img {
-    padding-top: 4vh;
-    padding-left: 7vw;
+    padding: 0.8rem;
     font-size: larger;
 }
