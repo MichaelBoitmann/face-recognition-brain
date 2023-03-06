@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <ParticlesBg type="cicle" bg={true} />
+        <ParticlesBg num={75} type="cobweb" bg={true} opacity="0.01"/>
         <Navigation />
         <Logo />
         <Rank />
