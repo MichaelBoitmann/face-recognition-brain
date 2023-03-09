@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import ParticlesBg from 'particles-bg';
-import Clarifai from 'clarifai';
+// import Clarifai from 'clarifai';
 import Navigation from './components/Navigation/Navigation';
+// import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import Logo from './components/Logo/Logo';
 import ImageLinkFrom from './components/ImageLinkForm/ImageLinkForm';
 import Rank from './components/Rank/Rank';
@@ -20,7 +21,7 @@ class App extends Component {
     console.log(event.target.value);
   }
 
-  onSubmit = () => {
+  onButtonSubmit = () => {
     console.log('click');
   }
 
