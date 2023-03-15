@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import Particles from 'react-particles-js';(replaced with ParticlesBg)
+// import Particles from 'react-particles-js';
 import ParticlesBg from 'particles-bg'
 import Clarifai from 'clarifai';
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
@@ -13,8 +13,21 @@ import './App.css';
 
 //You must add your own API key here from Clarifai.
 const app = new Clarifai.App({
-  apiKey: 'e7bf11813a9f4b4da81c7fab358e6db9'
+ apiKey: 'YOUR API KEY HERE'
 });
+
+// No Longer need this. Updated to particles-bg
+// const particlesOptions = {
+//   particles: {
+//     number: {
+//       value: 30,
+//       density: {
+//         enable: true,
+//         value_area: 800
+//       }
+//     }
+//   }
+// }
 
 class App extends Component {
   constructor() {
@@ -74,18 +87,7 @@ class App extends Component {
     // for the Face Detect Mode: https://www.clarifai.com/models/face-detection
     // If that isn't working, then that means you will have to wait until their servers are back up. 
 
-    // Old Way:
-    // app.models.predict(Clarifai.FACE_DETECT_MODEL, this.state.input)
-
-    // New Way:
-    app.models
-      .predict(
-        {
-          id: 'face-detection',
-          name: 'face-detection',
-          version: '6dc7e46bc9124c5c8824be4822abe105',
-          type: 'visual-detector',
-        }, this.state.input)
+    app.models.predict('face-detection', this.state.input)
       .then(response => {
         console.log('hi', response)
         if (response) {
@@ -120,7 +122,7 @@ class App extends Component {
     const { isSignedIn, imageUrl, route, box } = this.state;
     return (
       <div className="App">
-        <ParticlesBg className='particles' type="cobweb" bg={true} />
+        <ParticlesBg type="fountain" bg={true} />
         <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
         { route === 'home'
           ? <div>
