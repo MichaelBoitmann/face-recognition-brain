@@ -16,19 +16,6 @@ const app = new Clarifai.App({
  apiKey: 'YOUR API KEY HERE'
 });
 
-// No Longer need this. Updated to particles-bg
-// const particlesOptions = {
-//   particles: {
-//     number: {
-//       value: 30,
-//       density: {
-//         enable: true,
-//         value_area: 800
-//       }
-//     }
-//   }
-// }
-
 class App extends Component {
   constructor() {
     super();
