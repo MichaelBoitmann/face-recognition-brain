@@ -5,4 +5,5 @@ import App from './App';
 import 'tachyons';
 
 const root = createRoot(document.getElementById('root'));
+
 root.render(<App />);
