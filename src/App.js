@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+// import Particles from 'react-particles-js';
 import ParticlesBg from 'particles-bg'
-// import Clarifai from 'clarifai';
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import Navigation from './components/Navigation/Navigation';
 import Signin from './components/Signin/Signin';
@@ -9,11 +9,6 @@ import Logo from './components/Logo/Logo';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import Rank from './components/Rank/Rank';
 import './App.css';
-
-//You must add your own API key here from Clarifai.
-// const app = new Clarifai.App({
-//  apiKey: 'e7bf11813a9f4b4da81c7fab358e6db9'
-// });
 
 const initialState = {
   input: '',
@@ -29,6 +24,7 @@ const initialState = {
     joined: ''
   }
 }
+
 class App extends Component {
   constructor() {
     super();
@@ -89,6 +85,7 @@ class App extends Component {
             .then(count => {
               this.setState(Object.assign(this.state.user, { entries: count}))
             })
+            .catch(console.log)
 
         }
         this.displayFaceBox(this.calculateFaceLocation(response))
@@ -109,7 +106,7 @@ class App extends Component {
     const { isSignedIn, imageUrl, route, box } = this.state;
     return (
       <div className="App">
-        <ParticlesBg type="cobweb" bg={true} />
+        <ParticlesBg type="circle" bg={true} />
         <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
         { route === 'home'
           ? <div>
