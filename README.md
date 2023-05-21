@@ -16,11 +16,13 @@ Some of the standout features of the project are
 
 #### Register :
 
-![Register][(https://github.com/Euripidec/Face-Detect-Website/assets/111103974/74edb851-71ca-44e8-9b61-3db03e95de70)](https://github.com/MichaelBoitmann/face-recognition-brain/blob/main/src/images/register.jpg)
+![Register][![register](https://github.com/MichaelBoitmann/face-recognition-brain/assets/55775047/28b1cc9e-1bcc-4d2b-bfbe-11cfb49d65ab)
+
 
 #### Sign In :
 
-![Sign in][(https://github.com/Euripidec/Face-Detect-Website/assets/111103974/449086fd-c7c6-4555-b3ec-1a7596a00d36)](https://github.com/MichaelBoitmann/face-recognition-brain/blob/main/src/images/sign-in.jpg)
+![Sign in]![sign-in](https://github.com/MichaelBoitmann/face-recognition-brain/assets/55775047/71c007e4-ed7b-436b-a1a3-84a7d7120075)
+
 
 
 #### Face Detection :
