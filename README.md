@@ -16,12 +16,12 @@ Some of the standout features of the project are
 
 #### Register :
 
-![Register][![register](https://github.com/MichaelBoitmann/face-recognition-brain/assets/55775047/28b1cc9e-1bcc-4d2b-bfbe-11cfb49d65ab)
+![register](https://github.com/MichaelBoitmann/face-recognition-brain/assets/55775047/28b1cc9e-1bcc-4d2b-bfbe-11cfb49d65ab)
 
 
 #### Sign In :
 
-![Sign in]![sign-in](https://github.com/MichaelBoitmann/face-recognition-brain/assets/55775047/71c007e4-ed7b-436b-a1a3-84a7d7120075)
+![sign-in](https://github.com/MichaelBoitmann/face-recognition-brain/assets/55775047/71c007e4-ed7b-436b-a1a3-84a7d7120075)
 
 
 
