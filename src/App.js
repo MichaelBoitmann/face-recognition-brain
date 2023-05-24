@@ -10,6 +10,46 @@ import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import Rank from './components/Rank/Rank';
 import './App.css';
 
+const returnClarifaiRequestOptions = (imageUrl) => {
+  // Your PAT (Personal Access Token) can be found in the portal under Authentification
+  const PAT = process.env.REACT_APP_API_CLARIFAI;
+  // Specify the correct user_id/app_id pairings
+  // Since you're making inferences outside your app's scope
+  const USER_ID = "superboi";
+  const APP_ID = "Test";
+  // Change these to whatever model and image URL you want to use
+  // const MODEL_ID = "face-detection";
+  // const MODEL_VERSION_ID = "aa7f35c01e0642fda5cf400f543e7c40";
+  const IMAGE_URL = imageUrl;
+
+  const raw = JSON.stringify({
+    user_app_id: {
+      user_id: USER_ID,
+      app_id: APP_ID,
+    },
+    inputs: [
+      {
+        data: {
+          image: {
+            url: IMAGE_URL,
+          },
+        },
+      },
+    ],
+  });
+
+  const requestOptions = {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      Authorization: "Key " + PAT,
+    },
+    body: raw,
+  };
+
+  return requestOptions;
+};
+
 const initialState = {
   input: '',
   imageUrl: '',
@@ -65,13 +105,10 @@ class App extends Component {
   // url link from render.com backend live
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
-      fetch('https://smart-face-detector-backend.onrender.com/imageurl', {
-        method: 'post',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({
-          input: this.state.input
-        })
-      })
+    fetch(
+      "https://api.clarifai.com/v2/models/" + "face-detection" + "/outputs",
+      returnClarifaiRequestOptions(this.state.input)
+    )
       .then(response => response.json())
       .then(response => {
         if (response) {
