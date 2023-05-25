@@ -92,15 +92,15 @@ class App extends Component {
       rightCol: width - (clarifaiFace.right_col * width),
       bottomRow: height - (clarifaiFace.bottom_row * height)
     }
-  }
+  };
 
   displayFaceBox = (box) => {
     this.setState({box: box});
-  }
+  };
 
   onInputChange = (event) => {
     this.setState({input: event.target.value});
-  }
+  };
   
   // url link from render.com backend live
   onButtonSubmit = () => {
