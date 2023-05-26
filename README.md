@@ -6,7 +6,7 @@
 > as well as a PostgreSQL database to keep track of how many entries a user has made.
 
 #### Deployed Version 👇(Feel free to visit)
-https://smart-face-detector.onrender.com/
+<p target="_blank">https://smart-face-detector.onrender.com</p>
 
 ## Key Features
 
