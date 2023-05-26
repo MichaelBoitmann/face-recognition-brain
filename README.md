@@ -40,10 +40,19 @@ Some of the standout features of the project are
 
 <ul>
   <li><b>Face Detection: </b> Using Clarifai API</li>
-  <li><b>Frontend: </b>Built using React</li>
-  <li><b>Server: </b>Built using Express framework</li>
-  <li><b>Database: </b>PostgreSQL, for storing user data</li>
-  <li><b> NPM Packages :</b> Create-React-App, Tachyons, react-parallax-tilt, react-particles, Bcrypt, Postgresql, knex, body parser, cors, express</li>
+  <li><b>Frontend: </b>       Built using React</li>
+  <li><b>Server: </b>         Built using Express framework</li>
+  <li><b>Database: </b>       PostgreSQL, for storing user data</li>
+  <li><b> NPM Packages :</b>  Create-React-App 
+                              Tachyons 
+                              react-parallax-tilt 
+                              react-particles 
+                              Bcrypt
+                              Postgresql
+                              KNEX
+                              Body-Parser 
+                              CORS
+                              ExpressJS</li>
 </ul>
 
 ## Technologies
