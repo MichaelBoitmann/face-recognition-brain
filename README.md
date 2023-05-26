@@ -60,10 +60,10 @@ Some of the standout features of the project are
 
 ## Technologies
 
-1. reactjs
-2. nodejs
-3. expressjs
-4. postgreSQL (for store user data)
+1. ReactJS
+2. NodeJS
+3. ExpressJS
+4. PostgreSQL (my Database)
 
 ## To run this project :
 
