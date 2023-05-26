@@ -3,7 +3,10 @@
 > Face-Detect is a web application that detects faces from images using machine learning with
 > provisions for registering and signing in and also
 > uses the Clarifai API to locate a face in a picture. Using a React.js front-end and Node.js back-end with Express.js
-> as well as a PostgreSQL database to keep track of how many entries a user has made. 
+> as well as a PostgreSQL database to keep track of how many entries a user has made.
+
+#### Deployed Version 👇(Feel free to visit)
+https://smart-face-detector.onrender.com/
 
 ## Key Features
 
