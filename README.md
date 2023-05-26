@@ -65,11 +65,9 @@ Some of the standout features of the project are
 3. expressjs
 4. postgreSQL (for store user data)
 
-#### To run this project :
+## To run this project :
 
 1. Clone this repo
-![clone](https://github.com/MichaelBoitmann/face-recognition-brain/assets/55775047/968e8a7f-7af2-4fb9-9e1d-328cee6a86fe)
-
-3. Change your directory : `cd face-recognition-brain`
-4. Run `npm install`
-5. Run `npm start`
+2. Get into the cloned folder : `cd face-recognition-brain`
+3. Run `npm install`
+4. Run `npm start`
