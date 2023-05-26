@@ -43,16 +43,19 @@ Some of the standout features of the project are
   <li><b>Frontend: </b>       Built using React</li>
   <li><b>Server: </b>         Built using Express framework</li>
   <li><b>Database: </b>       PostgreSQL, for storing user data</li>
-  <li><b> NPM Packages :</b>  Create-React-App 
-                              Tachyons 
-                              react-parallax-tilt 
-                              react-particles 
-                              Bcrypt
-                              Postgresql
-                              KNEX
-                              Body-Parser 
-                              CORS
-                              ExpressJS</li>
+  <li><b> NPM Packages :</b>  
+    <ul>
+      <li>Create-React-App</li>
+      <li>Tachyons</li>
+      <li>react-parallax-tilt</li>
+      <li>react-particles</li>
+      <li>Bcrypt</li>
+      <li>Postgresql</li>
+      <li>KNEX</li>
+      <li>Body-Parser</li>
+      <li>CORS</li>
+      <li>ExpressJS</li>
+    </ul>                        
 </ul>
 
 ## Technologies
@@ -65,6 +68,6 @@ Some of the standout features of the project are
 #### To run this project :
 
 1. Clone this repo
-2. Change your directory : `cd Face-Detect-Website`
+2. Change your directory : `cd face-recognition-brain`
 3. Run `npm install`
 4. Run `npm start`
