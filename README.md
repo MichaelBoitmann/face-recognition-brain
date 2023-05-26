@@ -68,6 +68,7 @@ Some of the standout features of the project are
 ## To run this project :
 
 1. Clone this repo
+![clone](https://github.com/MichaelBoitmann/face-recognition-brain/assets/55775047/25bd30a9-39bc-4e98-b93c-f1bc7421b792)
 2. Get into the cloned folder : `cd face-recognition-brain`
 3. Run `npm install`
 4. Run `npm start`
