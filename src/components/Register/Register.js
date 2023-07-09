@@ -6,7 +6,7 @@ class Register extends React.Component {
     this.state = {
       email: '',
       password: '',
-      name: ''
+      name: '',
     }
   }
 
@@ -30,21 +30,21 @@ class Register extends React.Component {
         email: this.state.email,
         password: this.state.password,
         name: this.state.name
-      })
+      }),
     })
-      .then(response => response.json())
-      .then(user => {
+      .then((response) => response.json())
+      .then((user) => {
         if (user.id) {
           this.props.loadUser(user)
           this.props.onRouteChange('home');
         }
-      })
-  }
+      });
+  };
 
   render() {
     return (
       <article className="br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center">
-        <main className="pa4 black-80">
+        <main className="pa4 black-80 signincard br3 pa4 bg-transparent shadow-2 white">
           <div className="measure">
             <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
               <legend className="f1 fw6 ph0 mh0">Register</legend>
@@ -59,7 +59,10 @@ class Register extends React.Component {
                 />
               </div>
               <div className="mt3">
-                <label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
+                <label 
+                  className="db fw6 lh-copy f6" 
+                    htmlFor="email-address"
+                  >Email</label>
                 <input
                   className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
                   type="email"
@@ -69,7 +72,10 @@ class Register extends React.Component {
                 />
               </div>
               <div className="mv3">
-                <label className="db fw6 lh-copy f6" htmlFor="password">Password</label>
+                <label 
+                  className="db fw6 lh-copy f6" 
+                  htmlFor="password"
+                >Password</label>
                 <input
                   className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
                   type="password"

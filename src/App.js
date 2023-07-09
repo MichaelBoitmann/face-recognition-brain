@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import Particles from 'react-particles-js';
 import ParticlesBg from 'particles-bg'
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import Navigation from './components/Navigation/Navigation';
@@ -15,7 +14,7 @@ const returnClarifaiRequestOptions = (imageUrl) => {
   const PAT = process.env.REACT_APP_API_CLARIFAI;
   // Specify the correct user_id/app_id pairings
   // Since you're making inferences outside your app's scope
-  const USER_ID = "superboi";
+  const USER_ID = "tja5p55d5qpt";
   const APP_ID = "Test";
   // Change these to whatever model and image URL you want to use
   // const MODEL_ID = "face-detection";
@@ -144,26 +143,31 @@ class App extends Component {
     return (
       <div className="App">
         <ParticlesBg type="cobweb" bg={true} />
-        <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
-        { route === 'home'
-          ? <div>
-              <Logo />
-              <Rank
-                name={this.state.user.name}
-                entries={this.state.user.entries}
-              />
-              <ImageLinkForm
-                onInputChange={this.onInputChange}
-                onButtonSubmit={this.onButtonSubmit}
-              />
-              <FaceRecognition box={box} imageUrl={imageUrl} />
-            </div>
-          : (
-             route === 'signin'
-             ? <Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
-             : <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
-            )
-        }
+        <Navigation 
+          isSignedIn={isSignedIn} 
+          onRouteChange={this.onRouteChange} />
+        {route === 'home' ? (
+          <div>
+            <Logo />
+            <Rank
+              name={this.state.user.name}
+              entries={this.state.user.entries}
+            />
+            <ImageLinkForm
+              onInputChange={this.onInputChange}
+              onButtonSubmit={this.onButtonSubmit}
+            />
+            <FaceRecognition box={box} imageUrl={imageUrl} />
+          </div>
+        ) : route === 'signin' ? (
+          <Signin 
+            loadUser={this.loadUser} 
+            onRouteChange={this.onRouteChange} />
+        ) : (
+          <Register 
+            loadUser={this.loadUser} 
+            onRouteChange={this.onRouteChange}/>
+        )}
       </div>
     );
   }
